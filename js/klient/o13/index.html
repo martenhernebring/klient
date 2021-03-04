@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Övningar 13</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer src="https://unpkg.com/vue@3.0.5"
+      integrity="sha384-0k9//QJdpmfSdp5IK3oJjOYPfz42f2FE0goMLtK9Vq7aKllvc4Lnz7lHPHiFhvDP"
+      crossorigin="anonymous">
+  </script>
+  <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      {{ message }}
+      <div ref="messages"></div>
+      <input type="button" value="Hello" @click="helloWorld">
+      <!--label-input name="somename" label="My label"></label-input-->
+    </div>
+  </body>
+</html>
