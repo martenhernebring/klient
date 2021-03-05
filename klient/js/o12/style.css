@@ -1,0 +1,14 @@
+.ovn {
+  padding-top: 5em;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.center > * {
+  width: 30%;
+  height: 5em;
+}
