@@ -4,24 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Övningar 13. Övning 1-3</title>
+    <title>Övningar 13. Övning 4</title>
     <link rel="stylesheet" href="style.css" />
     <script defer src="https://unpkg.com/vue@3.0.5"
       integrity="sha384-0k9//QJdpmfSdp5IK3oJjOYPfz42f2FE0goMLtK9Vq7aKllvc4Lnz7lHPHiFhvDP"
       crossorigin="anonymous"
     ></script>
-    <script defer src="app.js"></script>
+    <script defer src="ovning5.js"></script>
   </head>
   <body>
-    <div id="app">
-      <div>
-        {{ message }}
-        <input type="button" class="button" value="Hello" @click="hello('world')" />
-      </div>
-      <div>
-        <a href = "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-        class="link" @click.prevent="hello('link')">Not a link!</a>
-      </div>
-    </div>
+    <form id="app">
+      <input class="item" type="search" id="query" placeholder="At least 3" />
+      <input type="text" class="button" value="Hello" @click="hello('world')" />
+    </form>
   </body>
 </html>

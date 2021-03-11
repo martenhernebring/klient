@@ -1,14 +1,10 @@
-.ovn {
-  padding-top: 5em;
-}
-
-.center {
+#app {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  align-content: center;
 }
 
-.center > * {
-  width: 30%;
-  height: 5em;
+button {
+  width: 25%;
 }

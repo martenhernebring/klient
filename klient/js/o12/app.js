@@ -1,28 +1,21 @@
-const app1 = {
+const app = {
   data() {
     return {
-      ovn: 'Övning1',
+      message: '',
     }
   },
-  methods: {
-    helloWorld() {
-      console.log('Hello World')
-    }
-  }
-}
-
-const app2 = {
-  data() {
-    return {
-      ovn: 'Övning2',
-    }
+  created() {
+    this.message = 'Hello World!'
   },
   methods: {
-    helloWorld() {
-      console.log('Hello World')
-    }
-  }
+    hello(thing) {
+      if(thing === 'world'){
+        console.log(this.message)
+      } else {
+        console.log(thing)
+      }
+    },
+  },
 }
 
-Vue.createApp(app1).mount("#app1")
-Vue.createApp(app2).mount("#app2")
+Vue.createApp(app).mount('#app')
